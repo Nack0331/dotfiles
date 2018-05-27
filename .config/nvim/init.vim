@@ -14,15 +14,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=$XDG_CACHE_HOME/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('$XDG_CACHE_HOME/dein')
-    call dein#begin('$XDG_CACHE_HOME/.cache/dein')
+if dein#load_state('~/.cache/dein')
+    call dein#begin('~/.cache/dein')
 
     " Let dein manage dein
     " Required:
-    call dein#add('$XDG_CACHE_HOME/dein/repos/github.com/Shougo/dein.vim')
+    call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
     " Add or remove your plugins here:
     call dein#add('Shougo/neosnippet.vim')
@@ -53,6 +53,12 @@ if dein#check_install()
 endif
 
 colorscheme iceberg
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight LineNr ctermbg=none
+highlight Folded ctermbg=none
+highlight EndOfBuffer ctermbg=none
+
 let g:deoplete#enable_at_startup = 1
 let g:syntastic_python_checkers = ['pyflakes', 'pep8']
 
