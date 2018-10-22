@@ -17,7 +17,7 @@ colors
 alias ll='ls -lAG'
 alias vi='nvim'
 
-eval "$(docker-machine env default)"
+eval "$(docker-machine env)"
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 
