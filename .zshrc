@@ -12,6 +12,9 @@ compinit
 
 autoload -Uz colors
 colors
+
+setopt nonomatch
+
 # End of lines added by compinstall
 
 alias ll='ls -lAG'
